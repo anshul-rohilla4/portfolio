@@ -13,11 +13,11 @@ const Contact = () => {
             form.current,
             import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
-        F
-            .then(
+            .then( // The .then() is now correctly chained to the sendForm() call
                 (result) => {
                     console.log("Message sent:", result.text);
                     alert("Message sent successfully!");
+                    form.current.reset(); // Also a good idea to reset the form on success
                 },
                 (error) => {
                     console.log("Error:", error.text);
@@ -80,7 +80,7 @@ const Contact = () => {
                 <div className="mt-8 sm:mt-10 lg:mt-12 text-center">
                     <p className="text-xs sm:text-sm text-gray-500">
                         or reach out directly at{" "}
-                        <a href="mailto:your.email@example.com" className="text-purple-600 hover:text-purple-700 font-medium">
+                        <a href="mailto:anshulrohilla111@gmail.com" className="text-purple-600 hover:text-purple-700 font-medium">
                             anshulrohilla111@gmail.com
                         </a>
                     </p>
