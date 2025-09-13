@@ -7,13 +7,13 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs
-            .sendForm(
-                "service_vuisjvf",   // replace with your Service ID
-                "template_zbeonk9",  // replace with your Template ID
-                form.current,
-                "CqyyEffGf8eE-kviV"    // replace with your Public Key
-            )
+        emailjs.sendForm(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            form.current,
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+        F
             .then(
                 (result) => {
                     console.log("Message sent:", result.text);
