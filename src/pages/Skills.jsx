@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { FaJs, FaReact, FaNodeJs, FaGitAlt, FaDocker, FaJava } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiSpringboot, SiCplusplus, SiMysql, SiKubernetes, SiJenkins, SiAwsamplify } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
@@ -48,12 +48,42 @@ const Skills = () => {
         },
     ];
 
+    const refs = useRef([]);
+    const [visible, setVisible] = useState([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const index = Number(entry.target.dataset.index);
+                        if (!visible.includes(index)) {
+                            setVisible((v) => [...v, index]);
+                        }
+                    }
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        refs.current.forEach((ref) => ref && observer.observe(ref));
+
+        return () => refs.current.forEach((ref) => ref && observer.unobserve(ref));
+    }, [visible]);
+
     return (
         <div id="Skills" className="flex flex-col items-center justify-center min-h-screen p-12">
             <h2 className="text-6xl font-bold text-purple-700 mb-12">Skills</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 w-full max-w-6xl">
                 {categories.map((category, idx) => (
-                    <div key={idx} className="p-6 bg-purple-50 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                    <div
+                        key={idx}
+                        ref={(el) => (refs.current[idx] = el)}
+                        data-index={idx}
+                        className={`p-6 bg-purple-50 rounded-xl shadow-md transition-all duration-700 transform ${visible.includes(idx) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+                            }`}
+                        style={{ transitionDelay: `${idx * 150}ms` }}
+                    >
                         <h3 className="text-3xl font-semibold text-purple-700 mb-6">{category.title}</h3>
                         <div className="grid grid-cols-2 gap-6">
                             {category.skills.map((skill, i) => (
