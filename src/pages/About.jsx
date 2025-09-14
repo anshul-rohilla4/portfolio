@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
 
     const educationData = [
-        { degree: "B.Tech (CSE)", institute: "SRMIST, Tamil Nadu", year: "2022 - Present" },
+        { degree: "B.Tech (CSE) Iot spec.", institute: "SRMIST, Tamil Nadu", year: "2022 - Present" },
         { degree: "Senior Secondary (12th)", institute: "St. Mary's Convent School, Uttrakhand", year: "2021 - 2022" },
         { degree: "Secondary (10th)", institute: "St. Mary's Convent School, Uttrakhand", year: "2020 - 2021" },
     ];
@@ -33,7 +33,7 @@ const About = () => {
             <div className="flex flex-col gap-4 sm:gap-6 w-full lg:w-2/3 text-purple-700">
                 <p className="text-2xl sm:text-3xl lg:text-5xl font-bold">About me</p>
                 <p className="text-sm sm:text-base lg:text-2xl leading-relaxed">
-                    Hi, I'm Anshul — a passionate learner and problem solver. I enjoy exploring new technologies, building small projects, and tackling challenges to grow my skills.
+                    Hi, I'm Anshul — a passionate learner and problem solver. I enjoy exploring new technologies, building projects, and tackling challenges to grow my skills.
                 </p>
 
                 {/* Education Timeline */}
