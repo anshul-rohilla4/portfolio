@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaVideo } from "react-icons/fa";
+import { FaGithub, FaVideo, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
     {
@@ -37,7 +37,49 @@ const projects = [
         ],
         tools: "Arduino Uno, C++",
     },
+    {
+        title: "The Explorer Alien",
+        links: [
+            { label: "Github", url: "https://github.com/anshul-rohilla4/firstWebGame", icon: <FaGithub /> },
+            { label: "Live", url: "https://alien-robber.netlify.app",icon: <FaExternalLinkAlt/>}
+        ],
+        description: [
+            "In this game, you control an alien using the arrow keys to explore the area and collect coins.",
+            "Each time the alien collects a coin, your score increases and the coin moves to a new random spot.",
+        ],
+        tools: "HTML, CSS, JavaScript (with Phaser game framework)",
+    },
+    {
+        title: "Restaurant Menu Web",
+        links: [
+            { label: "Github", url: "https://github.com/anshul-rohilla4/restaurant-menu-web", icon: <FaGithub /> },
+            { label: "Live", url: "https://restaurant-gus.netlify.app/",icon: <FaExternalLinkAlt/>}
+        ],
+        description: [
+            "Is a responsive web application that allows users to browse and explore restaurant menus online.",
+            "Offers a clean and interactive UI for seamless menu navigation.",
+        ],
+        tools: "HTML, CSS, JavaScript, Bootstrap",
+    },
+    {
+        title: "SringBoot demo-applicaiton",
+        links: [
+            { label: "Github", url: "https://github.com/anshul-rohilla4/springBootWebApp.git", icon: <FaGithub /> }
+        ],
+        description: [
+            "This project demonstrates how to set up and run a basic web app using modern Java technologies.",
+            "Supports full CRUD (Create, Read, Update, Delete) operations with backend integration.",
+        ],
+        tools: "Java, SpringBoot, Maven, SpringMVC",
+// - **Spring Boot**: A powerful framework that simplifies the setup and development of Java web applications. 
+// It provides built-in tools for dependency injection, configuration, and auto-setup, making it easy to start and scale web projects.
+
+// - **Spring MVC**: A part of the Spring Framework that implements the Model-View-Controller design pattern. 
+// It helps in handling HTTP requests, routing, and separating the application's business logic, user interface, and input control.
+    }
 ];
+
+
 
 const Projects = () => {
     return (

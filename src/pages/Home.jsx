@@ -23,9 +23,14 @@ const Home = () => {
                 {/* Main Intro */}
                 <div className="Intro text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-purple-700 pb-4 sm:pb-6 lg:pb-8 leading-tight">
                     Hi, I'm{" "}
-                    <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent scale-105 inline-block lg:ml-2 xl:ml-8">
-                        Anshul
-                    </span>
+                    <a href="https://anshul-rohilla4.github.io/Linktree/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <span className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent scale-105 inline-block lg:ml-2 xl:ml-8 transition-all duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:drop-shadow-[0_0_10px_rgba(236,72,153,0.8)] hover:scale-110">
+                            Anshul
+                        </span>
+                    </a>
+
                 </div>
 
                 {/* Typewriter Section */}
