@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { Typewriter } from 'react-simple-typewriter';
-import profileImg from '../assets/home-profile-img.jpg'
+import profileImg from '../assets/home-profile-img.png'
 
 const Home = () => {
     const spinnerFrames = ['▁', '▃', '▄', '▅', '▆', '▇', '█', '▇', '▆', '▅', '▄', '▃'];
