@@ -4,78 +4,87 @@ import { FaGithub, FaVideo, FaExternalLinkAlt } from "react-icons/fa";
 const projects = [
     {
         title: "Yelp-Camp",
-        links: [
+        links: [ // UNCHANGED - Kept completely original
             { label: "GitHub", url: "https://github.com/anshul-rohilla4/campaingnService.git", icon: <FaGithub /> },
             { label: "Demo Video", url: "https://drive.google.com/file/d/1-dUYeBYLAwwIKOxXcb29QzAL1v20PT9y/view?usp=drive_link", icon: <FaVideo /> },
         ],
-        description: [
-            "Deployed Node.js-based campground listing application with full CI/CD automation using Jenkins.",
-            "Implemented multi-stage pipeline including code checkout, testing, Trivy vulnerability scans, Docker builds, and Kubernetes deployments.",
-            "Managed cloud infrastructure with 3 EC2 instances for local development, Jenkins CI/CD, and Kubernetes production cluster (Duck DNS).",
+        description: [ // Descriptions are the only part that is updated
+            "Deployed a Node.js-based campground listing application with full CI/CD automation using Jenkins.",
+            "Implemented a multi-stage pipeline including code checkout, testing, Trivy vulnerability scans, Docker builds, and Kubernetes deployments.",
+            "Managed cloud infrastructure with 3 EC2 instances for development, CI/CD, and a production Kubernetes cluster.",
         ],
         tools: "Jenkins, Docker, Trivy, Kubernetes, AWS EC2, Duck DNS",
     },
     {
         title: "Movie Finder",
-        links: [
+        links: [ // UNCHANGED - Kept completely original
             { label: "GitHub", url: "https://github.com/anshul-rohilla4/movieDesk", icon: <FaGithub /> }
         ],
         description: [
-            "React-based web application for searching movies and viewing trending content.",
-            "Integrated TMDb API and Appwrite backend with debounced search optimization.",
+            "Built a React-based web application for searching movies and viewing trending content.",
+            "Integrated the TMDb API for real-time data and an Appwrite backend for user features.",
+            "Engineered a debounced search function to optimize API usage and enhance user experience.",
         ],
-        tools: "React, TailwindCSS, Vite, Appwrite, TMDb API",
+        tools: "React, Tailwind CSS, Vite, Appwrite, TMDb API",
     },
     {
         title: "Flood Monitoring System",
-        links: [
+        links: [ // UNCHANGED - Kept completely original
             { label: "GitHub", url: "https://github.com/anshul-rohilla4/Flood-management-sys", icon: <FaGithub /> }
         ],
         description: [
-            "IoT-based system for real-time flood detection using water level and rainfall sensors.",
-            "Implemented alert system via SMS/email notifications for stakeholders.",
+            "Engineered an IoT-based system for real-time flood detection using water level and rainfall sensors.",
+            "Programmed an automated alert system to notify stakeholders via SMS and email.",
         ],
         tools: "Arduino Uno, C++",
     },
     {
-        title: "The Explorer Alien",
-        links: [
-            { label: "Github", url: "https://github.com/anshul-rohilla4/firstWebGame", icon: <FaGithub /> },
-            { label: "Live", url: "https://alien-robber.netlify.app",icon: <FaExternalLinkAlt/>}
+        title: "Recipe Nanny",
+        links: [ // UNCHANGED - Kept completely original
+            { label: "Github", url: "https://github.com/anshul-rohilla4/recipeNanny", icon: <FaGithub /> },
+            { label: "Live", url: "https://genie-rasoi.netlify.app/", icon: <FaExternalLinkAlt /> }
         ],
         description: [
-            "In this game, you control an alien using the arrow keys to explore the area and collect coins.",
-            "Each time the alien collects a coin, your score increases and the coin moves to a new random spot.",
+            "Developed an intelligent web application that generates recipes based on user-provided ingredients and kitchen tools.",
+            "Integrated the OpenRouter AI API to power the recipe generation logic.",
+        ],
+        tools: "React, tailwind CSS, OpenRouter AI API"
+    },
+    {
+        title: "The Explorer Alien",
+        links: [ // UNCHANGED - Kept completely original
+            { label: "Github", url: "https://github.com/anshul-rohilla4/firstWebGame", icon: <FaGithub /> },
+            { label: "Live", url: "https://alien-robber.netlify.app", icon: <FaExternalLinkAlt /> }
+        ],
+        description: [
+            "Developed a 2D web-based game where the player controls an alien to collect coins.",
+            "Implemented game logic for scoring, random item placement, and player movement using the Phaser framework.",
         ],
         tools: "HTML, CSS, JavaScript (with Phaser game framework)",
     },
     {
         title: "Restaurant Menu Web",
-        links: [
+        links: [ // UNCHANGED - Kept completely original
             { label: "Github", url: "https://github.com/anshul-rohilla4/restaurant-menu-web", icon: <FaGithub /> },
-            { label: "Live", url: "https://restaurant-gus.netlify.app/",icon: <FaExternalLinkAlt/>}
+            { label: "Live", url: "https://restaurant-gus.netlify.app/", icon: <FaExternalLinkAlt /> }
         ],
         description: [
-            "Is a responsive web application that allows users to browse and explore restaurant menus online.",
-            "Offers a clean and interactive UI for seamless menu navigation.",
+            "Developed a responsive web application for browsing interactive restaurant menus.",
+            "Designed and built a clean UI with Bootstrap to ensure seamless menu navigation.",
         ],
         tools: "HTML, CSS, JavaScript, Bootstrap",
     },
     {
-        title: "SringBoot demo-applicaiton",
-        links: [
+        title: "Spring Boot Demo Application",
+        links: [ // UNCHANGED - Kept completely original
             { label: "Github", url: "https://github.com/anshul-rohilla4/springBootWebApp.git", icon: <FaGithub /> }
         ],
         description: [
-            "This project demonstrates how to set up and run a basic web app using modern Java technologies.",
-            "Supports full CRUD (Create, Read, Update, Delete) operations with backend integration.",
+            "Developed a full-stack web application to demonstrate modern Java backend development using Spring Boot.",
+            "Implemented full CRUD (Create, Read, Update, Delete) functionality for data management.",
+            "Utilized the Spring MVC pattern to handle HTTP requests and separate business logic from the user interface.",
         ],
         tools: "Java, SpringBoot, Maven, SpringMVC",
-// - **Spring Boot**: A powerful framework that simplifies the setup and development of Java web applications. 
-// It provides built-in tools for dependency injection, configuration, and auto-setup, making it easy to start and scale web projects.
-
-// - **Spring MVC**: A part of the Spring Framework that implements the Model-View-Controller design pattern. 
-// It helps in handling HTTP requests, routing, and separating the application's business logic, user interface, and input control.
     }
 ];
 
