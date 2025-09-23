@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from "react-icons/fa";
 import { Typewriter } from 'react-simple-typewriter';
 import profileImg from '../assets/home-profile-img.png'
 
@@ -69,6 +69,14 @@ const Home = () => {
                         className="group"
                     >
                         <FaEnvelope className="text-3xl sm:text-4xl lg:text-5xl text-gray-700 group-hover:text-purple-700 transform transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] active:scale-95" />
+                    </a>
+                    <a
+                        href="/resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group"
+                    >
+                        <FaFilePdf className="text-3xl sm:text-4xl lg:text-5xl text-gray-700 group-hover:text-purple-700 transform transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(168,85,247,0.8)] active:scale-95" />
                     </a>
                 </div>
             </div>
